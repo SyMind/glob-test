@@ -13,7 +13,7 @@ mod test {
 
     #[inline]
     fn glob(pat: &str, path: &str) -> bool {
-        glob_match::glob_match(pat, path)
+        fast_glob::glob_match(pat, path)
     }
 
     fn assert_match(pat: &str, text: &str, opts: &GlobOptions) {
